@@ -1,29 +1,160 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Mechatronic Engineer Portfolio - Alternative</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>AI & Engineering | Control Systems | SCADA</p>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-microchip"></i>
+                Mechatronic Engineer
+            </a>
+            <nav class="nav-desktop">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+
+    <nav class="nav-mobile">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <section>
-        <h2>About Me</h2>
-        <p>I'm an AI and control systems engineer specializing in predictive maintenance and industrial automation.</p>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Engineering Innovation</h1>
+            <p>Creating advanced automation systems, robotics, and industrial solutions</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="button primary">
+                    <i class="fas fa-robot"></i>
+                    See My Work
+                </a>
+                <a href="#contact" class="button secondary">
+                    <i class="fas fa-paper-plane"></i>
+                    Contact Me
+                </a>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2025 My Name. All Rights Reserved.</p>
-    </footer>
+
+    <section id="about" class="about reveal">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="section-desc">Bridging mechanical, electrical, and software engineering to create innovative solutions</p>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Engineering workspace with robotics equipment">
+                </div>
+                <div class="about-content">
+                    <div class="card">
+                        <h3>My Journey</h3>
+                        <p>As a Mechatronic Engineer, I combine precision mechanical design, advanced electronics, and intelligent software to build automated solutions for the future.</p>
+                    </div>
+                    <div class="card">
+                        <h3>My Expertise</h3>
+                        <p>I specialize in industrial automation, robotics systems, and IoT integration, focusing on creating efficient and innovative solutions for complex engineering challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills reveal">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <p class="section-desc">Comprehensive expertise in mechatronic engineering and automation</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-cogs skill-icon"></i>
+                    <h3>Mechanical Systems</h3>
+                    <p>CAD/CAM Design • 3D Modeling • Precision Manufacturing • System Integration</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-microchip skill-icon"></i>
+                    <h3>Electronics</h3>
+                    <p>PCB Design • Embedded Systems • Sensor Integration • Control Systems</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>Programming</h3>
+                    <p>PLC Programming • Arduino • Python • C++ • Real-time Systems</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-robot skill-icon"></i>
+                    <h3>Robotics</h3>
+                    <p>Robot Programming • Motion Control • Vision Systems • Path Planning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects reveal">
+        <div class="container">
+            <h2>Portfolio Projects</h2>
+            <p class="section-desc">Innovative solutions in automation and robotics</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Automated Assembly System">
+                    <div class="project-content">
+                        <h3>Smart Assembly System</h3>
+                        <p>A fully automated assembly line with real-time monitoring and adaptive control systems.</p>
+                        <a href="#" class="button secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232" alt="Robotic Sorting System">
+                    <div class="project-content">
+                        <h3>Vision-Guided Robot</h3>
+                        <p>Advanced robotic sorting system using machine vision and AI for quality control.</p>
+                        <a href="#" class="button secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact reveal">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-desc">Interested in working together? Let's discuss your project requirements</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button type="submit">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
